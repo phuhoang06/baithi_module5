@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import Layout from './components/Layout';
-import SongList from './components/SongList';
-import SongDetail from './components/SongDetail';
-import SongRegistration from './components/SongRegistration';
+import SongList from './components/formHome/SongList';
+import SongDetail from './components/formSongDetail/SongDetail';
+import SongRegistration from './components/formRegistration/SongRegistration';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
