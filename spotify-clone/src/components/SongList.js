@@ -26,7 +26,7 @@ const PlayerHeader = ({ song, onClose }) => {
           <Col xs={10}>
             <h5>
               <i className="bi bi-music-note-beamed me-2"></i>
-              Đang chuẩn bị phát: <strong>{song.title}</strong>
+              <strong>{song.title}</strong>
             </h5>
             <p className="mb-0">Ca sĩ: {song.artist}</p>
           </Col>
