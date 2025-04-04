@@ -1,0 +1,139 @@
+/* ==========================================================================
+   BASE STYLES & RESETS
+   ========================================================================== */
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* ==========================================================================
+   REACT DEFAULT STYLES
+   ========================================================================== */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+   COMMON COMPONENTS
+   ========================================================================== */
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Badges */
+.badge {
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* Navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Tables */
+table {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(29, 185, 84, 0.05);
+}
+
+/* ==========================================================================
+   SPOTIFY SPECIFIC STYLES
+   ========================================================================== */
+
+/* Brand Colors */
+.spotify-green {
+  color: #1DB954;
+}
+
+/* Search Input */
+.search-input {
+  border-radius: 20px;
+  padding-left: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   PLAYER COMPONENTS
+   ========================================================================== */
+
+/* Player Header */
+.player-header {
+  background: linear-gradient(90deg, #1DB954, #191414);
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.player-header:hover {
+  box-shadow: 0 5px 15px rgba(29, 185, 84, 0.3);
+}
+
+.player-header .card-body {
+  padding: 15px 20px;
+}
+
+.player-header h5 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.player-header i.bi-music-note-beamed {
+  color: #1DB954;
+}
+
+/* Selected Song in Table */
+.table-primary {
+  background-color: rgba(29, 185, 84, 0.15) !important;
+  border-left: 3px solid #1DB954;
+}
